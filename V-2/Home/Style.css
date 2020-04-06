@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+header .part1 {
+  margin-top: 10px;
+  float: left;
+  color: #1FDBAE;
+  font-weight: 600;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+header .part1 img {
+  height: 50px;
+  width: 50px;
+  margin-right: 18px;
+}
+
+header .part2 {
+  float: right;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+header .part2 img {
+  margin-right: 18px;
+  width: 90px;
+  height: 90px;
+}
+
+.espace {
+  height: 70px;
+}
+
+.desc {
+  width: 100%;
+}
+
+.desc div {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.desc div p {
+  -webkit-animation-name: captionText;
+          animation-name: captionText;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  width: 600px;
+  margin: auto;
+  color: black;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+@-webkit-keyframes captionText {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes captionText {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.login {
+  width: 1000px;
+  margin: auto;
+}
+
+.login .Content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login .TM {
+  width: 500px;
+  height: 550px;
+}
+
+.login .Connexion {
+  height: 550px;
+  width: 500px;
+  border: 1px solid #1FDBAE;
+}
+
+.login .Connexion h1 {
+  color: #1FDBAE;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.login .Connexion div {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .Connexion div label {
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.login .Connexion div input {
+  font-size: 20px;
+  background-color: #F6F9FC;
+  height: 40px;
+  width: 440px;
+  margin: auto;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 9px;
+}
+
+.login .Connexion .showMdp {
+  margin-top: 0px;
+  display: block;
+}
+
+.login .Connexion .showMdp .show {
+  height: 15px;
+  width: 15px;
+  margin-left: 8px;
+}
+
+.login .Connexion button {
+  width: 170px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #1FDBAE;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.login .Connexion button:hover {
+  background-color: rgba(117, 117, 117, 0.8);
+}
+/*# sourceMappingURL=Style.css.map */

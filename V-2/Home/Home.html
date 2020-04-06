@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <header>
+        <div class="part1">
+            <div><img src="../Images/Logo.jpg" alt="logo"></div>
+            <div> Tbeb-Lik </div>
+        </div>
+        <div class="part2">
+                <img src="../Images/OCP.jpg" alt="OCP">
+        </div>
+    </header>
+    <div class="espace">
+
+    </div>
+    <div class="espace">
+
+    </div>
+    <section class="desc">
+        <div>
+            <p> La consultation <br> En tout temps <br> En tout lieu. </p>
+        </div>
+    </section>
+    <div class="espace">
+        
+    </div>
+    <section class="login">
+    <div class="Content">
+        <div>
+            <img src="../Images/telemedecine3.jpg" class="TM">
+        </div>
+        <div class="Connexion">
+            <h1> Identification </h1>
+            <div>
+                <label for="matricule"> Matricule : </label>
+                <input type="text" id="matricule">
+            </div>
+            <div>
+                <label for="mdp"> Mot de passe : </label>
+                <input type="password" id="mdp">
+            </div>
+            <div class="showMdp">
+                <input type="checkbox" class="show" onclick="myFunction()"> 
+                <span style="font-size: 14px">Montrer mot de passe</span>
+            </div> 
+            <div><button class="BtnConnexion"> Login </button></div>
+        </div>
+    </div>
+    <div class="espace">
+        
+    </div>
+</section>
+    <script>
+         function myFunction() {
+            var x = document.getElementById("mdp");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

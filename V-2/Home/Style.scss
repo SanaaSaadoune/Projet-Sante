@@ -1,0 +1,149 @@
+$color : #1FDBAE;
+@mixin Btn {
+    background-color: $color;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    border:none;
+    border-radius: 25px;
+    font-size: 20px;
+    &:hover{
+        background-color: rgba(117, 117, 117, 0.8);
+    }
+}
+@mixin Center {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: Gilroy;
+    box-sizing: border-box;
+} 
+
+header{
+    width: 90%;
+    margin: auto;
+    margin-top:10px;
+    .part1{
+        margin-top:10px;
+        float: left;
+        color: $color;
+        font-weight: 600;
+        font-size: 26px;
+        display: flex;
+        @include Center();
+        img{
+            height:50px;
+            width: 50px;
+            margin-right: 18px;
+        }
+    }
+    .part2{
+        float: right;
+        font-size: 16px;
+        font-weight: 600;
+            img{
+                margin-right: 18px;
+                width:90px;
+                height:90px;
+            }
+        }
+}
+.espace{
+    height:70px;
+}
+.desc{
+    width: 100%;
+    div{
+        text-align: center;  
+        @include Center(); 
+        p{
+            animation-name: captionText;
+            animation-duration: 2s;
+            width: 600px;
+            margin: auto;
+            color: black;
+            font-size: 50px;
+            letter-spacing: 1px;
+        }
+    }   
+}
+@keyframes captionText{
+    0%{
+        opacity:0; transform: translateX(-100px);
+    }
+    100%{
+        opacity:1; transform: translateX(0px);
+    }
+    
+}
+
+.login{
+    width: 1000px;
+    margin:auto;
+    .Content{
+        width: 100%;
+        display: flex;
+    }
+    
+    .TM{
+        width:500px;
+        height:550px;
+    }
+    
+    .Connexion{
+        height:550px;
+        width: 500px;
+        border:1px solid $color;
+        h1{
+            color:$color;
+            text-align: center;
+            margin-top:70px;
+            margin-bottom:50px;
+            font-size: 40px;
+        }
+        div{
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            label{
+                font-size: 20px;
+                margin-left: 8px;
+            }
+            input{
+                font-size: 20px; 
+                background-color:#F6F9FC;
+                height: 40px;
+                width: 440px;
+                margin: auto;
+                border-style: none;
+                border-radius: 10px;
+                margin-top:10px;
+                padding: 9px;
+            }
+        }
+        .showMdp{
+            margin-top: 0px;
+            display: block;
+            
+            .show{
+                height:15px;
+                width: 15px;
+                margin-left: 8px;
+            }
+        }
+        button{
+            width: 170px;
+            margin: auto;
+            margin-top:40px;
+            @include Btn();
+        }    
+    }
+
+}
