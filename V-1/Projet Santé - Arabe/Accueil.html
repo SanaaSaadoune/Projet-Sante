@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Accueil </title>
+    <title>  طبيب ليك </title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <header>
         <div class="part1">
             <div><img src="./Images/Logo.png" alt="logo"></div>
-            <div> Tbeb-Lik </div>
+            <div> طبيب ليك </div>
         </div>
         <div class="part2">
-            <a href=""> Comment ça marche? </a>
+            <a href="">    كيفية العمل ؟</a>
             <button class="btnIdentifier" onclick="Connexion()"> 
-                <img src="./Images/Ident.png" alt="Identification">S'identifier
+                <img src="./Images/Ident.png" alt="Identification">الدخول 
             </button>
         </div>
     </header>
@@ -24,9 +24,9 @@
     </div>
     <section class="desc">
         <div>
-            <p class="p1"> La consultation <br> En tout temps <br> En tout lieu. </p>
-            <p class="p2"> Tbeb-Lik est une plateforme de consultation en ligne qui assure la relation patient - médecin  sans avoir à se déplacer.</p>
-            <input type="button" value="Consulter" class="btnConsulter">
+            <p class="p1"> استشارة طبية <br> في كل وقت <br> في أي مكان </p>
+            <p class="p2">  طبيب ليك - هي  وسيلة للاستشارة الطبية عبر الإنترنت تضمن العلاقة بين المريض والطبيب دون الحاجة إلى التنقل</p>
+            <a href="#consulter"><input  type="button" value="استشر الآن" class="btnConsulter"></a>
         </div>
     </section>
     <div class="espace">
@@ -38,17 +38,17 @@
     <form method="post" action="traitement.php" id="connexion" >
         <fieldset id="f2"> 
             <p><img src="./Images/login.png" alt="login" class="imageLog"> </p>
-            <p> Bienvenue </p>
+            <p> مرحباً بك </p>
             <hr >
             <div>
-                <input type="text" id="emailLog" placeholder="Email" autofocus required>
-                <input type="password" id="mdpLog" placeholder="Mot de passe " required>
+                <input type="text" id="emailLog" placeholder=" البريد الالكتروني"  autofocus required>
+                <input type="password" id="mdpLog" placeholder="كلمة المرور" required>
             </div>
-            <input type="checkbox" class="show" onclick="myFunction()"> <span style="font-size: 14px">Montrer mot de passe</span> 
+            <input type="checkbox" class="show" onclick="myFunction()"> <span style="font-size: 14px"> رؤية كلمة المرور </span> 
             <div class="BtnConnexion">
-                <input type="submit" value="Connexion" >
+                <input type="submit" value="تسجيل الدخول" >
             </div>
-            <p class="lien"><a href=""> Mot de passe oublié? </a></p>
+            <p class="lien"><a href=""> هل نسيت كلمة المرور ؟</a></p>
         </fieldset>
     </form>
 
@@ -78,33 +78,33 @@
 
     <form method="post" action="traitement.php" id="inscription" >
         <fieldset id="f1">
-            <p> Inscrivez-vous </p>
+            <p> إنشاء حساب </p>
             <hr >
             <div>
-                <label for="nom"> Nom complet : </label>
+                <label for="nom"> : الاسم الكامل  </label>
                 <input type="text" id="nomc" disabled >
             </div>
             <div>
-                <label for="num"> Numéro de téléphone : </label>
+                <label for="num">: رقم الهاتف  </label>
                 <input type="text" id="numc" disabled >
             </div>
             <div>
-                <label for="email"> Email : </label>
-                <input type="text" id="email" autofocus><span id="6"  style="color:red;font-size: 13px;"></span>
+                <label for="email">  : البريد الالكتروني </label>
+                <input type="text" id="email" autofocus><span id="6"  style="color:red;font-size: 16px;"></span>
             </div>
             <div>
-                <label for="mdp"> Mot de passe : </label>
-                <input type="password" id="mdp"><span id="7" style="color:red;font-size: 13px;"></span>
+                <label for="mdp"> : كلمة المرور </label>
+                <input type="password" id="mdp"><span id="7" style="color:red;font-size: 16px;"></span>
             </div>
             <div>
-                <label for="cmdp"> Confirmation du mot de passe : </label>
-                <input type="password" id="cmdp"><span id="8" style="color:red;font-size: 13px;"></span>
+                <label for="cmdp"> : تأكيد كلمة المرور  </label>
+                <input type="password" id="cmdp"><span id="8" style="color:red;font-size: 16px;"></span>
             </div>
             <div class="BtnInscription">
-                <input type="button" value="Inscription" onclick="ValiderInsc()" >
+                <input type="button" value="إنشاء " onclick="ValiderInsc()" >
             </div>
             <div>
-                <p> Déja inscris? <br/><a href="javascript:Connexion2()">Connectes-toi maintenant !</a></p>
+                <p> مسجل من قبل ؟ <br/><a href="javascript:Connexion2()"> ! سجل الدخول الآن </a></p>
             </div>
         </fieldset>
     </form>
@@ -120,26 +120,26 @@
             var mdp=document.getElementById("mdp");
             var cmdp=document.getElementById("cmdp");
 
-            if( email.value=="" ) document.getElementById('6').innerHTML= "Remplir l'email "; 
-                else if(!rgxEmail.test(email.value)) document.getElementById('6').innerHTML = "Format incorrect";
+            if( email.value=="" ) document.getElementById('6').innerHTML= "ملء البريد الالكتروني"; 
+                else if(!rgxEmail.test(email.value)) document.getElementById('6').innerHTML = "تنسيق غير صحيح";
                 else {
                     document.getElementById('6').innerHTML=" ";
                     cpt2++;
                 }
-            if( mdp.value=="" ) document.getElementById('7').innerHTML= "Remplir le mdp";
+            if( mdp.value=="" ) document.getElementById('7').innerHTML= "ملء كلمة المرور";
                 else {
                     document.getElementById('7').innerHTML=" ";
                     cpt2++;
                 }
-            if( cmdp.value=="" ) document.getElementById('8').innerHTML= "Remplir la confirmation";
-                if(mdp.value != cmdp.value) document.getElementById('8').innerHTML="Confirmation incorrecte";   
+            if( cmdp.value=="" ) document.getElementById('8').innerHTML= "ملء تأكيد كلمة المرور";
+                if(mdp.value != cmdp.value) document.getElementById('8').innerHTML="غير متوافقان";   
                 else {
                     document.getElementById('8').innerHTML=" ";
                     cpt2++;
                 }
             if(cpt2==3){
                 modal.style.display="none";
-                alert("Inscription bien effectuée !")
+                alert("! تم التسجيل بنجاح")
                 modal2.style.display="block";
             }
         }
@@ -147,42 +147,42 @@
 
 
     <section class="formulaire">
-        <p> Votre consultation en un clic !</p>
+        <p> ! استشارتك بنقرة واحدة </p>
         <div class="espace">
         </div>
-        <form>
+        <form id="consulter">
             <div class="ligne">
                 <div> 
-                    <div><label for="nom"> Nom complet : </label></div>
-                    <div><input type="text" id="nom"><span id="1" style="color:red"></span></div>
+                    <div><label for="num"> : رقم الهاتف  </label></div>
+                    <div><input type="tel"  id="num"><span id="2" style="color:red"></span></div>
                 </div>
                 <div> 
-                    <div><label for="num"> Numéro de téléphone : </label></div>
-                    <div><input type="tel"  id="num"><span id="2" style="color:red"></span></div>
+                    <div><label for="nom"> : الاسم الكامل </label></div>
+                    <div><input type="text" id="nom"><span id="1" style="color:red"></span></div>
                 </div>
             </div>
             <div class="ligne">
                 <div> 
-                    <div><label for="objet"> Objet : </label></div>
+                    <div><label for="objet">: الموضوع </label></div>
                     <div><input type="text" id="objet"><span id="3" style="color:red"></span></div>
                 </div>
                 <div> 
-                    <div><label for="categorie"> Catégorie : </label></div>
+                    <div><label for="categorie">: نوعية التخصص الطبي</label></div>
                     <div>
                         <select id="specialites">
-                            <option value="" selected disabled hidden>Choisir spécialité</option>
-                            <option value="spec1"> Spécialité1 </option>
-                            <option value="spec2"> Spécialité2 </option>
+                            <option value="" selected disabled hidden> اختر التخصص</option>
+                            <option value="spec1"> 1 التخصص </option>
+                            <option value="spec2">2 التخصص </option>
                         </select><span id="4" style="color:red;"></span>
                     </div>
                 </div>
             </div>
             <div class="ligne2">
                 <div> 
-                    <div><label for="message"> Message : </label></div>
+                    <div><label for="message">: الرسالة </label></div>
                     <div><textarea id="message" required></textarea></div><span id="5" style="color:red;"></span>
                 </div>
-                <input type="button" value="Envoyer" class="btnEnvoyer" onclick="Valider()">
+                <input type="button" value="إرسال" class="btnEnvoyer" onclick="Valider()">
             </div>
         </form>
     </section>
@@ -207,7 +207,7 @@
             var select = document.getElementById("specialites");
             var valeur = select.options[select.selectedIndex].value;
             if(nom=="")
-                document.getElementById('1').innerText ="A remplir!";  
+                document.getElementById('1').innerText ="*!";  
             else
             {
                  document.getElementById('1').innerText =" "; 
@@ -215,7 +215,7 @@
             }
             if(num=="")
             {
-                document.getElementById('2').innerText ="A remplir!";  
+                document.getElementById('2').innerText ="*!";  
             }
             else if(!rgx.test(num)) document.getElementById('2').innerHTML="tel incorrect";
             else
@@ -224,19 +224,19 @@
                 cpt++; 
             }
             if(objet=="")
-                document.getElementById('3').innerText ="A remplir!";  
+                document.getElementById('3').innerText ="*!";  
             else
             {
                  document.getElementById('3').innerText =""; cpt++; 
             }
             if(valeur=="")
-            document.getElementById('4').innerText ="A remplir!";  
+            document.getElementById('4').innerText ="*!";  
             else
             { 
                 document.getElementById('4').innerText =""; cpt++; 
             }
             if(message=="")
-            document.getElementById('5').innerText ="A remplir!";  
+            document.getElementById('5').innerText ="*!";  
             else
             { 
                 document.getElementById('5').innerText =""; cpt++; 
