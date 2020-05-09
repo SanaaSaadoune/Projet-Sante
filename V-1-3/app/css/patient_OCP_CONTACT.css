@@ -728,6 +728,18 @@ footer{
     margin: auto;
     margin-bottom:-40px;
   }
+  .part1 .parags .parag1 {
+    width: auto;
+}
+.part1 .parags .parag2 {
+  width: auto;
+}
+.part1 .parags .parag3 {
+  width: auto;
+}
+#envoyer{
+  display: none;
+}
 }
 
 
